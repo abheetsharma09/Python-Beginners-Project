@@ -1,4 +1,4 @@
-# 🐍 Python Data Science Journey Mini Projects
+# 🐍 Python Beginners-Project
 
 Welcome to my repository of Python projects! This is where I document my 10-hour marathon and transition from basic syntax to Object-Oriented Programming (OOP).
 
