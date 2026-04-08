@@ -15,7 +15,7 @@ class book_add: #Books class to assing values and add books to the json file
         books_dic["Status"] = self.book_status
 
         print(books_dic)
-        with open("BOOKS_DATA.json" , "a") as books_data_to_write:
+        with open("random.json" , "a") as books_data_to_write:
             books_data_to_write.write("\n") #Here it add gaping b/w two dictionaries data
             json.dump(books_dic , books_data_to_write )
             print(f'Books Sucessfully Added to the Library')
@@ -40,7 +40,7 @@ class book_issue(book_add): #Search the the books from the json file using name 
     #(Here using inheritence)
     def __init__(self , empty_list = []) -> None:
         self.empty_list = empty_list
-        with open("BOOKS_DATA.json" , "r")as book_data_to_read:
+        with open("random.json" , "r")as book_data_to_read:
             for data in book_data_to_read:#loops the whole json file 1 by 1
                 if data.strip():#ignores line gaps
                     book_data_to_read_dic = json.loads(data) #here it returns data in adictionary formated
